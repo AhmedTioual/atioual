@@ -96,7 +96,7 @@
       display: grid; place-items: center; font-size: 32px; font-weight: 700; letter-spacing: .02em;
       box-shadow: 0 0 0 6px var(--accent-soft);
     }
-    img.monogram { object-fit: cover; }
+    img.monogram { object-fit: cover; display: block; }
     h1 { font-size: 1.85rem; font-weight: 700; line-height: 1.15; margin: 0 0 6px; letter-spacing: -.01em; }
     .role { font-size: 1.05rem; font-weight: 600; color: var(--accent); margin: 0 0 10px; }
     .tagline { font-size: .98rem; color: var(--muted); margin: 0 auto; max-width: 38ch; }
@@ -162,13 +162,6 @@
       font-size: .85rem; font-weight: 500; padding: 6px 12px; border-radius: 999px;
       background: var(--surface); border: 1px solid var(--line);
     }
-    .projects { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
-    .projects li { padding: 14px 0 14px 16px; border-left: 2px solid var(--line); }
-    .projects li + li { margin-top: 2px; }
-    .projects li:first-child { border-left-color: var(--accent); }
-    .projects strong { display: block; font-weight: 600; font-size: .98rem; }
-    .projects p { margin: 4px 0 6px; font-size: .9rem; color: var(--muted); }
-    .projects .stack { font-size: .8rem; font-weight: 600; color: var(--accent); }
     .langs { display: flex; flex-wrap: wrap; gap: 8px 20px; margin: 0; padding: 0; list-style: none; font-size: .92rem; }
     .langs span { color: var(--muted); }
 
@@ -205,7 +198,6 @@
 
   <main class="page">
     <header>
-      <!-- Swap for a photo:  -->
       <img class="monogram" src="assets/photo.png" alt="Ahmed TIOUAL">
       <h1>Ahmed TIOUAL</h1>
       <p class="role" data-i18n="role">Data Analyst / Data Engineer</p>
@@ -219,7 +211,7 @@
 
     <nav class="links" data-i18n-aria="navLabel" aria-label="Liens">
       <!-- LinkedIn -->
-      <a class="link primary" href="https://www.linkedin.com/in/ahmed-tioual/" target="_blank" rel="noopener noreferrer">
+      <a class="link primary" data-goatcounter-click="click-linkedin" href="https://www.linkedin.com/in/ahmed-tioual/" target="_blank" rel="noopener noreferrer">
         <span class="icon" aria-hidden="true">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
         </span>
@@ -240,11 +232,11 @@
           <span class="sub" data-i18n="cvSub">PDF · version française</span>
         </span>
         <span class="actions">
-          <a class="btn" data-cv href="assets/CV_Ahmed_TIOUAL_FR.pdf" target="_blank" rel="noopener">
+          <a class="btn" data-cv data-goatcounter-click="cv-view" href="assets/CV_Ahmed_TIOUAL_FR.pdf" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
             <span data-i18n="view">Voir</span>
           </a>
-          <a class="btn solid" data-cv href="assets/CV_Ahmed_TIOUAL_FR.pdf" download>
+          <a class="btn solid" data-cv data-goatcounter-click="cv-download" href="assets/CV_Ahmed_TIOUAL_FR.pdf" download>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
             <span data-i18n="download">Télécharger</span>
           </a>
@@ -261,11 +253,11 @@
           <span class="sub" data-i18n="dipSub">BI, AWS, IBM</span>
         </span>
         <span class="actions">
-          <a class="btn" href="assets/Diplomes_Certifications_Ahmed_TIOUAL.pdf" target="_blank" rel="noopener">
+          <a class="btn" data-goatcounter-click="diplomas-view" href="assets/Diplomes_Certifications_Ahmed_TIOUAL.pdf" target="_blank" rel="noopener">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>
             <span data-i18n="view">Voir</span>
           </a>
-          <a class="btn solid" href="assets/Diplomes_Certifications_Ahmed_TIOUAL.pdf" download>
+          <a class="btn solid" data-goatcounter-click="diplomas-download" href="assets/Diplomes_Certifications_Ahmed_TIOUAL.pdf" download>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
             <span data-i18n="download">Télécharger</span>
           </a>
@@ -275,15 +267,16 @@
 
     <!-- Quick contact: the shortest path to a call -->
     <div class="contact">
-      <a class="btn" href="mailto:tioual.ahmed1@exemple.com?subject=Contact%20-%20Ahmed%20TIOUAL">
+      <a class="btn" data-goatcounter-click="email" href="mailto:tioual.ahmed1@exemple.com?subject=Contact%20-%20Ahmed%20TIOUAL">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
         <span data-i18n="email">M'écrire</span>
       </a>
-      <a class="btn" href="assets/Ahmed_TIOUAL.vcf" download>
+      <a class="btn" data-goatcounter-click="save-contact" href="assets/Ahmed_TIOUAL.vcf" download>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>
         <span data-i18n="vcard">Enregistrer le contact</span>
       </a>
     </div>
+
     <section>
       <h2 data-i18n="skillsTitle">Compétences clés</h2>
       <ul class="chips">
@@ -322,13 +315,6 @@
         dipTitle: "Diplômes & certifications", dipSub: "BI, AWS, IBM",
         view: "Voir", download: "Télécharger",
         email: "M'écrire", vcard: "Enregistrer le contact",
-        projTitle: "Réalisations récentes",
-        p1Title: "Validation d'une migration de données vers AWS",
-        p1Text: "Framework Python/SQL de contrôle (métadonnées, volumétrie, agrégats) et vérification automatisée de la réplication CDC, déployée sur serveur Linux.",
-        p2Title: "Plateforme d'analyse interne",
-        p2Text: "Application web de bout en bout pour gérer les demandes et comparer des données techniques et commerciales, reliée à des tableaux de bord Power BI.",
-        p3Title: "Tableaux de bord qualité et production",
-        p3Text: "Rapports Power BI remplaçant un suivi manuel sous Excel, pour une meilleure visibilité des équipes opérationnelles.",
         skillsTitle: "Compétences clés", langTitle: "Langues",
         l1: "Français <span>· courant</span>", l2: "Anglais <span>· professionnel</span>", l3: "Arabe <span>· langue maternelle</span>",
         footer: "Merci pour votre visite.",
@@ -346,13 +332,6 @@
         dipTitle: "Degrees & certifications", dipSub: "BI, AWS, IBM",
         view: "View", download: "Download",
         email: "Email me", vcard: "Save contact",
-        projTitle: "Recent work",
-        p1Title: "Data migration validation to AWS",
-        p1Text: "Python/SQL validation framework (metadata, row counts, aggregates) and automated CDC replication checks, deployed on a Linux server.",
-        p2Title: "Internal Analytics platform",
-        p2Text: "End-to-end web app to manage requests and compare technical and commercial data, connected to Power BI dashboards.",
-        p3Title: "Quality and production dashboards",
-        p3Text: "Power BI reports replacing manual Excel tracking, giving operational teams clearer visibility.",
         skillsTitle: "Key skills", langTitle: "Languages",
         l1: "French <span>· fluent</span>", l2: "English <span>· professional</span>", l3: "Arabic <span>· native</span>",
         footer: "Thanks for stopping by.",
@@ -408,5 +387,20 @@
       try { localStorage.setItem("theme", next); } catch (e) {}
     });
   </script>
+
+  <!-- ================== Analytics (GoatCounter) ================== -->
+  <script>
+    // QR scans are recorded as their own "page": ?src=qr-fr shows up as /qr-fr in the dashboard.
+    // Normal visits (links from email, LinkedIn...) show up as /
+    window.goatcounter = {
+      path: function () {
+        const src = new URLSearchParams(location.search).get("src");
+        return src ? "/" + src.replace(/[^a-z0-9-]/gi, "") : "/";
+      }
+    };
+  </script>
+  <!-- Replace "ahmed-tioual" with the code you chose on goatcounter.com -->
+  <script data-goatcounter="https://ahmed-tioual.goatcounter.com/count"
+          async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
